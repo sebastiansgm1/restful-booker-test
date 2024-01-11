@@ -1,0 +1,57 @@
+plugins {
+    id "net.serenity-bdd.serenity-gradle-plugin" version "3.2.0"
+    id 'java'
+    id 'idea'
+    id 'com.github.sherter.google-java-format' version '0.9'
+}
+
+defaultTasks 'clean', 'test', 'aggregate'
+
+repositories {
+    mavenCentral()
+    google()
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+}
+
+apply plugin: "com.github.sherter.google-java-format"
+apply plugin: "maven-publish"
+
+group 'com.yape.pe'
+version '1.0.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext {
+    slf4jVersion = '1.7.7'
+    serenityCoreVersion = '3.2.0'
+    junitVersion = '4.13.1'
+    assertJVersion = '3.8.0'
+}
+
+dependencies {
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-junit:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-screenplay:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-cucumber:${serenityCoreVersion}",
+            "net.serenity-bdd:serenity-rest-assured:${serenityCoreVersion}",
+            "junit:junit:${junitVersion}",
+            "org.assertj:assertj-core:${assertJVersion}",
+            "org.slf4j:slf4j-simple:1.7.32",
+            "com.googlecode.json-simple:json-simple:1.1.1",
+            "io.rest-assured:json-schema-validator:5.2.0",
+            "com.fasterxml.jackson.datatype:jackson-datatype-jdk8:2.14.0",
+            "com.fasterxml.jackson.dataformat:jackson-dataformat-csv:2.14.0"
+}
+
+
+test {
+    testLogging.showStandardStreams = true
+    systemProperties System.getProperties()
+}
+
+gradle.startParameter.continueOnFailure = true
+
+test.finalizedBy(aggregate)

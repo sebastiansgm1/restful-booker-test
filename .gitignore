@@ -1,0 +1,78 @@
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle files
+.gradle
+build/
+
+#images
+.jpg
+
+# Compiled class file
+*.class
+
+# Log Files
+*.log
+
+# IntelliJ
+*.iml
+*.iws
+.idea/*
+!/gradle/wrapper/gradle-wrapper.jar
+
+# Libraries
+*.lib
+*.a
+*.la
+*.lo
+
+# Sonarlint plugin
+.idea/sonarlint
+
+# Package Files #
+*.jar
+*.nar
+*.zip
+*.tar.gz
+*.rar
+*.war
+*.ear
+
+# ignore files target
+target/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Mac
+.DS_Store
+
+# Maven
+log/
+.scannerwork/
+Videos/
+null/
+
+*.txt
+build/google-java-format/0.8/fileStates.txt
+build/google-java-format/0.8/settings.txt
+build/tmp/compileJava/source-classes-mapping.txt
+build/google-java-format/0.8/fileStates.txt
+build/google-java-format/0.8/settings.txt
+build/tmp/compileJava/source-classes-mapping.txt
+.idea/jarRepositories.xml
+.idea/gradle.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+build/classes/java/main/com/treinta/utils/CsvUtils.class
+build/google-java-format/0.8/fileStates.txt
+build/google-java-format/0.8/settings.txt
+build/google-java-format/0.8/settings.txt
+build/google-java-format/0.8/fileStates.txt
+build/google-java-format/0.8/settings.txt
+build/google-java-format/0.8/fileStates.txt
+gradlew
