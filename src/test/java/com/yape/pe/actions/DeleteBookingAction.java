@@ -3,7 +3,6 @@ package com.yape.pe.actions;
 import static com.yape.pe.utils.GetEnvironmentParameters.getUrl;
 import static com.yape.pe.utils.ServicesPaths.BOOKING;
 
-import net.serenitybdd.core.Serenity;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 
