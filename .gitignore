@@ -19,7 +19,6 @@ build/
 *.iml
 *.iws
 .idea/*
-!/gradle/wrapper/gradle-wrapper.jar
 
 # Libraries
 *.lib
