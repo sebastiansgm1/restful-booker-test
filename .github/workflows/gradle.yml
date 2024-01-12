@@ -24,4 +24,4 @@ jobs:
       run: chmod +x ./gradlew
 
     - name: Run Tests
-      run: ./gradlew -g $GITHUB_WORKSPACE/.gradle test
+      run: ./gradlew test
