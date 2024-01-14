@@ -56,3 +56,7 @@ puede ver las ejecuciones en la pestaña actions en el repositorio github
 
 https://github.com/sebastiansgm1/restful-booker-test/actions 
 
+## Reportes
+Puede consultar los reportes en la ruta target/site/serenity/index.html
+Cuando se ejecuta en github actions el reporte queda descargable en un zip
+
