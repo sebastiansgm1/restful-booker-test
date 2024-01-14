@@ -25,3 +25,9 @@ jobs:
 
     - name: Run Tests
       run: ./gradlew test
+
+    - name: Archive Serenity Reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: serenity-reports
+        path: path/to/your/serenity/reports
