@@ -30,4 +30,5 @@ jobs:
       uses: actions/upload-artifact@v2
       with:
         name: serenity-reports
-        path: ///home/runner/work/restful-booker-test/restful-booker-test/build/reports/tests/test/
+        path: ///home/runner/work/restful-booker-test/restful-booker-test/target/site/serenity
+      if: always()
