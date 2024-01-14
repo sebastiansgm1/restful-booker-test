@@ -47,3 +47,12 @@ Se plantean varias pruebas con el fin de lograr una buena cobertura, las pruebas
 - **Xpath**: https://www.w3schools.com/xml/xpath_syntax.asp
 - **Cucumber**: https://cucumber.io/docs/cucumber/
 - **Appium**: https://appium.io/docs/en/about-appium/api/
+
+## Ejecución de pruebas en Github Action (CI)
+
+Este proyecto esta parametrizado para ejecutarse en github actions, el disparador del
+actions es cuando se hace push a la rama principal o se realiza un pull request,
+puede ver las ejecuciones en la pestaña actions en el repositorio github
+
+https://github.com/sebastiansgm1/restful-booker-test/actions 
+
